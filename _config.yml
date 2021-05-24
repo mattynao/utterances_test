@@ -1,1 +1,26 @@
-theme: jekyll-theme-cayman
+title: Utterances_test
+description: Test of utterance for potential need for Kaizenovation
+remote_theme: pmarsceill/just-the-docs
+search_enabled: false
+permalink: /:title/
+# logo: "/img/sail_communityPhoto155.jpg"
+# change directory info:
+#   baseurl : org+repo-name
+#   repo_code_url : full url to repo
+baseurl: "/utterances_test"
+repo_code_url: "https://github.com/mattynao/utterances_test"
+include:
+  - '_*_.html'
+  - '_*_.*.html'
+  - '_*_*.html'
+  - '_*_*.*.html'
+  - '#*.html'
+  - '#*.*.html'
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      title: /:name
