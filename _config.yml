@@ -25,7 +25,7 @@ search:
   # Enable or disable the search button that appears in the bottom right corner of every page
   # Supports true or false (default)
   button: false
-permalink: /:title/
+#permalink: /:title/
 # logo: "/img/sail_communityPhoto155.jpg"
 # change directory info:
 #   baseurl : org+repo-name
