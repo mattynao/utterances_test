@@ -7,7 +7,7 @@ permalink: /:title/
 # change directory info:
 #   baseurl : org+repo-name
 #   repo_code_url : full url to repo
-baseurl: "/mattynao/utterances_test"
+baseurl: "/utterances_test"
 repo_code_url: "https://github.com/mattynao/utterances_test"
 include:
   - '_*_.html'
