@@ -10,7 +10,7 @@ parent: home
 子文書のサンプル
 
 <script src="https://utteranc.es/client.js"
-        repo="[ENTER REPO HERE]"
+        repo="mattynao/utterances_test"
         issue-term="pathname"
         label="Feedback"
         theme="github-light"
