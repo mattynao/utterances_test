@@ -11,6 +11,10 @@ v1.0.0, 2021-05-27
 
 AsciidocはMarkdownよりも機能豊富・安定性の高いmarkup言語です。
 
+ifeval::["{backend}" == "html5"]
+pass:[<ruby><rb>hello world</rb><rp>（</rp><rt>こんにちは世界</rt><rp>）</rp></ruby>]
+endif::[]
+
 <script src="https://utteranc.es/client.js"
         repo="mattynao/utterances_test"
         issue-term="pathname"
