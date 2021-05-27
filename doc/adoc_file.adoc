@@ -11,26 +11,24 @@ v1.0.0, 2021-05-27
 
 AsciidocはMarkdownよりも機能豊富・安定性の高いmarkup言語です。
 
+Asciidoc自体はGitHub Pagesでの公開に対応していないため、 https://asciidoctor.org/[Asciidoctor] によるHTML化が必要となります。
+
+またutteranceのコメントフォームを埋め込むのに、若干複雑な指定が必要になります(そのままだとテキストの一部とみなされてHTML変換されるため)。
+
+このページに埋め込んだコメントフォームは、下記の指定によって作成されています。
+
 ----
+
 ifeval::["{backend}" == "html5"]
-pass:[<ruby><rb>hello world</rb><rp>（</rp><rt>こんにちは世界</rt><rp>）</rp></ruby>]
-endif::[]
-----
-
-ifeval::["{backend}" == "html5"]
-pass:[<ruby><rb>hello world</rb><rp>（</rp><rt>こんにちは世界</rt><rp>）</rp></ruby>]
-endif::[]
-
-----
-
-<script src="https://utteranc.es/client.js"
+pass:[<script src="https://utteranc.es/client.js"
         repo="mattynao/utterances_test"
         issue-term="pathname"
         label="Feedback"
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script>
+        </script>]
+endif::[]
 
 ----
 
