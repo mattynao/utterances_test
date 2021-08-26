@@ -22,8 +22,8 @@
       <button type="submit">送信</button>
     </div>
     -->
-    <input type="submit" name="btn_submit" value="送信">
-    <input type="hidden" name="form_session" value="ta9galkjlsGJ==">
+    <input type="submit" name="btn_submit" value="送信"></input>
+    <input type="hidden" name="form_session" value="ta9galkjlsGJ=="></input>
 </form>
 <p id="words_of_thanks">
     送信されました
@@ -149,18 +149,11 @@
   }
 
   const putIssue2GitHub = async function(args) {
-    const [path_name, mail_val, title_val, body] = args
+    const [path_name, mail_val, title_val, body] = args;
 
     // GitHub API instance
     const octokit = new Octokit({ auth: `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` });
-    console.log(octokit)
-
-    // debug
-    window.alert(`入力値:\n\n`
-                  + `path:\n ${path_name} \n`
-                  + `mail address:\n ${mail_val} \n`
-                  + `title:\n ${title_val} \n`
-                  + `body:\n ${body}`) ;
+    console.log(octokit);
 
     // create Issue
     const response = await octokit.request('POST /repos/{owner}/{repo}/issues', {
@@ -168,25 +161,23 @@
       repo: 'utterances_test',
       title: title_val,
       body: body
-    })
-    console.log(response)
+    });
+    console.log(response);
   }
 
   var input_submit = document.querySelector("input[type=submit]");
   input_submit.addEventListener("click", function(e){
 
-    // cancel
     e.preventDefault();
 
-    //[path_name, mail_val, title_val, textarea_val]
     let args = getArgs(e) ;
     const [path_name, mail_val, title_val, textarea_val] = args ;
 
     const body = `#### 投稿者メールアドレス\n ${mail_val} \n\n`
                 + `### 対象ページ\n ${path_name}\n\n`
-                + `## 質問 \n ${textarea_val}`
+                + `## 質問 \n ${textarea_val}` ;
 
-    const args2git = [path_name, mail_val, title_val, body]
+    const args2git = [path_name, mail_val, title_val, body];
     putIssue2GitHub(args2git) ;
 
   });
