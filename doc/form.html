@@ -631,11 +631,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
     e.preventDefault();
 
     //[path_name, mail_val, title_val, textarea_val]
-    let args = [];
-    console.log(`type of args before assign\n` + typeof(args))
-    args = getArgs(e) ;
-    console.log(`type of args after assign\n` + typeof(args))
-    console.log(`args:\n ${args}`);
+    let args = getArgs(e) ;
     const [path_name, mail_val, title_val, textarea_val] = args ;
 
     const body = `#### 投稿者メールアドレス\n ${mail_val} \n\n`
@@ -652,7 +648,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-08-26 16:37:08 +0900
+Last updated 2021-08-26 16:44:25 +0900
 </div>
 </div>
 </body>
