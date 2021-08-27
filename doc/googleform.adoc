@@ -19,6 +19,10 @@
       </div>
 
       <div class="item">
+        <input id="file_name" type="hidden" name="entry.593226274"></input>
+      </div>
+
+      <div class="item">
         <button type="submit">送信</button>
       </div>
   </form>
@@ -140,7 +144,7 @@
           document.getElementById("custom_form").appendChild(dummy_send_target);
 
           const form_iframe = document.createElement("iframe");
-          form_iframe.src = encodeURI(`https://docs.google.com/forms/u/0/d/e/1FAIpQLSd8jktXNPJ8HiHzZRWLIsl5uICauyyRnZu61SwT7PhMqyk1XQ/formResponse?emailAddress=${get_textbox_value("emailAddress")}&entry.1664715574=${get_textbox_value("entry.1664715574")}&submit=Submit`);
+          form_iframe.src = encodeURI(`https://docs.google.com/forms/u/0/d/e/1FAIpQLSd8jktXNPJ8HiHzZRWLIsl5uICauyyRnZu61SwT7PhMqyk1XQ/formResponse?emailAddress=${get_textbox_value("emailAddress")}&entry.1664715574=${get_textbox_value("entry.1664715574")}&entry.593226274=${location.pathname}.&submit=Submit`);
           form_iframe.style.display = "none";
           document.getElementById("custom_form").appendChild(form_iframe);
 

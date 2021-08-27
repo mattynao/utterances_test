@@ -3,7 +3,7 @@ layout: page
 title: googleform
 grand_parent: home
 parent: solutions
-nav_order: 4
+nav_order: 3
 ---
 
 <!DOCTYPE html>
@@ -471,6 +471,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
       </div>
 
       <div class="item">
+        <input id="file_name" type="hidden" name="entry.593226274"></input>
+      </div>
+
+      <div class="item">
         <button type="submit">送信</button>
       </div>
   </form>
@@ -592,7 +596,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
           document.getElementById("custom_form").appendChild(dummy_send_target);
 
           const form_iframe = document.createElement("iframe");
-          form_iframe.src = encodeURI(`https://docs.google.com/forms/u/0/d/e/1FAIpQLSd8jktXNPJ8HiHzZRWLIsl5uICauyyRnZu61SwT7PhMqyk1XQ/formResponse?emailAddress=${get_textbox_value("emailAddress")}&entry.1664715574=${get_textbox_value("entry.1664715574")}&submit=Submit`);
+          form_iframe.src = encodeURI(`https://docs.google.com/forms/u/0/d/e/1FAIpQLSd8jktXNPJ8HiHzZRWLIsl5uICauyyRnZu61SwT7PhMqyk1XQ/formResponse?emailAddress=${get_textbox_value("emailAddress")}&entry.1664715574=${get_textbox_value("entry.1664715574")}&entry.593226274=${location.pathname}.&submit=Submit`);
           form_iframe.style.display = "none";
           document.getElementById("custom_form").appendChild(form_iframe);
 
@@ -610,7 +614,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-08-27 15:56:20 +0900
+Last updated 2021-08-27 18:25:53 +0900
 </div>
 </div>
 </body>
