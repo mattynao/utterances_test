@@ -22,8 +22,8 @@
       <button type="submit">送信</button>
     </div>
     -->
-    <input type="submit" name="btn_submit" value="送信"></input>
-    <input type="hidden" name="form_session" value="ta9galkjlsGJ=="></input>
+    <input type="submit" name="btn_submit" value="送信">
+    <input type="hidden" name="form_session" value="ta9galkjlsGJ==">
 </form>
 <p id="words_of_thanks">
     送信されました
@@ -123,6 +123,8 @@
 </style>
 <script type="module">
   import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+  //import { createOAuthUserClientAuth } from "https://cdn.skypack.dev/@octokit/auth-oauth-user-client";
+  //import { createOAuthDeviceAuth } from "https://cdn.pika.dev/@octokit/auth-oauth-device";
 
   function getArgs(e) {
     // path
@@ -149,11 +151,21 @@
   }
 
   const putIssue2GitHub = async function(args) {
-    const [path_name, mail_val, title_val, body] = args;
+    const [path_name, mail_val, title_val, body] = args
 
-    // GitHub API instance
-    const octokit = new Octokit({ auth: `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` });
+    // GitHub API authentication
+
+    /* hard-coded token cannot be commited to github*/
+    // const octokit = new Octokit({ auth: `personal_access_token` });
+    const octokit = new Octokit({ auth: PERSONAL_ACCESS_TOKEN });
     console.log(octokit);
+
+    // debug
+    window.alert(`入力値:\n\n`
+                  + `path:\n ${path_name} \n`
+                  + `mail address:\n ${mail_val} \n`
+                  + `title:\n ${title_val} \n`
+                  + `body:\n ${body}`) ;
 
     // create Issue
     const response = await octokit.request('POST /repos/{owner}/{repo}/issues', {
@@ -161,8 +173,8 @@
       repo: 'utterances_test',
       title: title_val,
       body: body
-    });
-    console.log(response);
+    })
+    console.log(response)
   }
 
   var input_submit = document.querySelector("input[type=submit]");
