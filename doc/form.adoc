@@ -123,6 +123,8 @@
 </style>
 <script type="module">
   import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+  //import { createOAuthUserClientAuth } from "https://cdn.skypack.dev/@octokit/auth-oauth-user-client";
+  //import { createOAuthDeviceAuth } from "https://cdn.pika.dev/@octokit/auth-oauth-device";
 
   function getArgs(e) {
     // path
@@ -151,9 +153,12 @@
   const putIssue2GitHub = async function(args) {
     const [path_name, mail_val, title_val, body] = args
 
-    // GitHub API instance
-    const octokit = new Octokit({ auth: `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` });
-    console.log(octokit)
+    // GitHub API authentication
+
+    /* hard-coded token cannot be commited to github*/
+    // const octokit = new Octokit({ auth: `personal_access_token` });
+    const octokit = new Octokit({ auth: PERSONAL_ACCESS_TOKEN });
+    console.log(octokit);
 
     // debug
     window.alert(`入力値:\n\n`
@@ -175,18 +180,16 @@
   var input_submit = document.querySelector("input[type=submit]");
   input_submit.addEventListener("click", function(e){
 
-    // cancel
     e.preventDefault();
 
-    //[path_name, mail_val, title_val, textarea_val]
     let args = getArgs(e) ;
     const [path_name, mail_val, title_val, textarea_val] = args ;
 
     const body = `#### 投稿者メールアドレス\n ${mail_val} \n\n`
                 + `### 対象ページ\n ${path_name}\n\n`
-                + `## 質問 \n ${textarea_val}`
+                + `## 質問 \n ${textarea_val}` ;
 
-    const args2git = [path_name, mail_val, title_val, body]
+    const args2git = [path_name, mail_val, title_val, body];
     putIssue2GitHub(args2git) ;
 
   });
