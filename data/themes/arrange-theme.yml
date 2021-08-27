@@ -1,0 +1,21 @@
+extends: default-with-fallback-font
+header:
+  height: 0.75in
+  line-height: 1
+  recto:
+    center:
+      content: 'IBM Corporation -- {docdate}'
+  verso:
+    center:
+      content: $header-recto-center-content
+  font-color: #ff0000
+footer:
+  height: 0.75in
+  line-height: 1
+  recto:
+    center:
+      content: '{section-or-chapter-title} | *{page-number}*'
+  verso:
+    center:
+      content: $footer-recto-center-content
+  font-color: #ff0000

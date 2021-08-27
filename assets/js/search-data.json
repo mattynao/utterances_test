@@ -1,0 +1,116 @@
+{"0": {
+    "doc": "asciidoc",
+    "title": "Document file by Asciidoc",
+    "content": "Nao Matsuo AB610139@jp.ibm.com version 1.0.0, 2021-05-27 Table of Contents . | Asciidocで書こう | . ",
+    "url": "/utterances_test/doc/adoc_file/",
+    "relUrl": "/doc/adoc_file/"
+  },"1": {
+    "doc": "asciidoc",
+    "title": "Asciidocで書こう",
+    "content": "AsciidocはMarkdownよりも機能豊富・安定性の高いmarkup言語です。 . Asciidoc自体はGitHub Pagesでの公開に対応していないため、 Asciidoctor によるHTML化が必要となります。 . またutteranceのコメントフォームを埋め込むのに、若干複雑な指定が必要になります(そのままだとテキストの一部とみなされてHTML変換されるため)。 . このページに埋め込んだコメントフォームは、下記の指定によって作成されています。 . pass:[&lt;script src=\"https://utteranc.es/client.js\" repo=\"mattynao/utterances_test\" issue-term=\"pathname\" label=\"Feedback\" theme=\"github-light\" crossorigin=\"anonymous\" async&gt; &lt;/script&gt;] . Version 1.0.0 Last updated 2021-05-27 15:34:46 +0900 . ",
+    "url": "/utterances_test/doc/adoc_file/#_asciidoc%E3%81%A7%E6%9B%B8%E3%81%93%E3%81%86",
+    "relUrl": "/doc/adoc_file/#_asciidocで書こう"
+  },"2": {
+    "doc": "asciidoc",
+    "title": "asciidoc",
+    "content": "Document file by Asciidoc | . ",
+    "url": "/utterances_test/doc/adoc_file/",
+    "relUrl": "/doc/adoc_file/"
+  },"3": {
+    "doc": "大見出しタイトル",
+    "title": "大見出しタイトル",
+    "content": " ",
+    "url": "/utterances_test/template/fileName/",
+    "relUrl": "/template/fileName/"
+  },"4": {
+    "doc": "大見出しタイトル",
+    "title": "見出しタイトル",
+    "content": "小見出しタイトル . 本文をここに記載 . 以下に主なMarkdown構文を記載。構文によって対応してないプラットフォームもあるので注意 . 太字 . italic (斜字体、日本語非対応のことが多い) . ~打ち消し線~ . リンクテキスト . 引用文 . 区切り線 --- . ",
+    "url": "/utterances_test/template/fileName/#%E8%A6%8B%E5%87%BA%E3%81%97%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB",
+    "relUrl": "/template/fileName/#見出しタイトル"
+  },"5": {
+    "doc": "googleform",
+    "title": "Googleフォーム",
+    "content": "埋め込みフォームからGoogleフォームに入力 . メールアドレス 質問内容 送信 送信されました . Last updated 2021-08-27 18:25:53 +0900 . ",
+    "url": "/utterances_test/doc/googleform/#_google%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0",
+    "relUrl": "/doc/googleform/#_googleフォーム"
+  },"6": {
+    "doc": "googleform",
+    "title": "googleform",
+    "content": "Googleフォーム | . ",
+    "url": "/utterances_test/doc/googleform/",
+    "relUrl": "/doc/googleform/"
+  },"7": {
+    "doc": "home",
+    "title": "GitHub Pagesに見やすいサイトを公開し、読んだ人のフィードバックをIssueとして取得したい!",
+    "content": " ",
+    "url": "/utterances_test/#github-pages%E3%81%AB%E8%A6%8B%E3%82%84%E3%81%99%E3%81%84%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E5%85%AC%E9%96%8B%E3%81%97%E8%AA%AD%E3%82%93%E3%81%A0%E4%BA%BA%E3%81%AE%E3%83%95%E3%82%A3%E3%83%BC%E3%83%89%E3%83%90%E3%83%83%E3%82%AF%E3%82%92issue%E3%81%A8%E3%81%97%E3%81%A6%E5%8F%96%E5%BE%97%E3%81%97%E3%81%9F%E3%81%84",
+    "relUrl": "/#github-pagesに見やすいサイトを公開し読んだ人のフィードバックをissueとして取得したい"
+  },"8": {
+    "doc": "home",
+    "title": "GitHub Pagesでページを作る",
+    "content": "どんなページを作ろうか? . GitHub Pagesは、GitHub上に置いたMarkdownファイルやHTMLファイルを自動的にWebサイトとして公開してくれる便利なツールです。 ただし、ただページを公開しただけだと素のHTML、古のインターネットでもみないような殺風景なページができてきます。 GitHub PagesはJekyllという静的サイト生成ツールを利用しており、ページにいろいろなカスタマイズを行うことができます。色々なテーマが公開されて使用できるようになっているので、わざわざ自分で作らなくても、既存のものから良さそうなものを選んでキレイで使いやすいサイトをつくることができます。 . フィードバックをもらいたいけど… . GitHub Pagesに公開したページを見た人から、意見・修正依頼などのフィードバックがある場合、なにも用意がなければ… . | 意見のある人が、いちいちリポジトリにIssueを立てて | わざわざどこのページに意見があるかを説明して | サイトの管理者がそれを確認して | やっとサイトが更新される | . なんて手順を踏むことになっちゃいます。読む方も作る方もめんどくさい。 . ",
+    "url": "/utterances_test/#github-pages%E3%81%A7%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E4%BD%9C%E3%82%8B",
+    "relUrl": "/#github-pagesでページを作る"
+  },"9": {
+    "doc": "home",
+    "title": "つーことで!!",
+    "content": ". | サイトは閲覧しやすく、資料として役に立つ形に | フィードバック取得をかんたんに、自動的にできるように | . したいですね!! あとは子文書へ。 . ",
+    "url": "/utterances_test/#%E3%81%A4%E3%83%BC%E3%81%93%E3%81%A8%E3%81%A7",
+    "relUrl": "/#つーことで"
+  },"10": {
+    "doc": "home",
+    "title": "home",
+    "content": " ",
+    "url": "/utterances_test/",
+    "relUrl": "/"
+  },"11": {
+    "doc": "just-the-docs",
+    "title": "Just-the-Docs",
+    "content": " ",
+    "url": "/utterances_test/doc/just-the-docs/#just-the-docs",
+    "relUrl": "/doc/just-the-docs/#just-the-docs"
+  },"12": {
+    "doc": "just-the-docs",
+    "title": "これなに?",
+    "content": "Just-the-Docs . A modern, highly customizable, and responsive Jekyll theme for documentation with built-in search. Easily hosted on GitHub Pages with few dependencies. Jekyllテーマの一種で、特徴は主に以下の2つ: . | ページを階層構造で表示できる | 標準で検索機能が利用できる(日本語には未対応) | . サイトの設定 . サイトの設定は、下記2つの設定パラメータで行います: . | _config.yml (サイト全体の設定。リポジトリのルートディレクトリに入ってるやつ) | Front matter (ページごとの設定。ファイルの一番上に書く) | . 設定が間違っていると、サイトの表示がヘンになります。きちんと表示されるように注意して設定! 本リポジトリが実例となります . 例えば、このページには下のようなFront matterがセットされてます(設定項目については、JekyllやJust the Docsに説明があるので確認してみてください)。細かい階層構造もこの形式で各ページごとに設定可能です。 . --- layout: page title: just-the-docs grand_parent: home parent: solutions nav_order: 1 --- . ※もちろん、実際に生成されたwebサイトからは見えない . 検索について . 先述の通り検索機能は現状日本語に対応してないです。Watson Discovery等に頼る必要あり。 . ",
+    "url": "/utterances_test/doc/just-the-docs/#%E3%81%93%E3%82%8C%E3%81%AA%E3%81%AB",
+    "relUrl": "/doc/just-the-docs/#これなに"
+  },"13": {
+    "doc": "just-the-docs",
+    "title": "just-the-docs",
+    "content": " ",
+    "url": "/utterances_test/doc/just-the-docs/",
+    "relUrl": "/doc/just-the-docs/"
+  },"14": {
+    "doc": "solutions",
+    "title": "使用するツール",
+    "content": " ",
+    "url": "/utterances_test/doc/solutions/#%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E3%83%84%E3%83%BC%E3%83%AB",
+    "relUrl": "/doc/solutions/#使用するツール"
+  },"15": {
+    "doc": "solutions",
+    "title": "いるもの",
+    "content": "基本は2つのソリューションを使用します。 . | Just-the-Docs . | 階層構造になったサイトを作成できるJekyllテーマ | . | utterances . | ページにコメント欄を設置して、Issueを自動生成するアプリ | . | . 詳しくはこのページの子文書へ。 . 各種ツールが使える状態にしたMarkdownテンプレートはtemplateフォルダに格納してあります。 . ",
+    "url": "/utterances_test/doc/solutions/#%E3%81%84%E3%82%8B%E3%82%82%E3%81%AE",
+    "relUrl": "/doc/solutions/#いるもの"
+  },"16": {
+    "doc": "solutions",
+    "title": "solutions",
+    "content": " ",
+    "url": "/utterances_test/doc/solutions/",
+    "relUrl": "/doc/solutions/"
+  },"17": {
+    "doc": "utterances",
+    "title": "utterances",
+    "content": " ",
+    "url": "/utterances_test/doc/utterances/",
+    "relUrl": "/doc/utterances/"
+  },"18": {
+    "doc": "utterances",
+    "title": "なにこれ?",
+    "content": "utterances how it works . When Utterances loads, the GitHub issue search API is used to find the issue associated with the page based on url, pathname or title. If we cannot find an issue that matches the page, no problem, utterances-bot will automatically create an issue the first time someone comments. どういうこと? . つまり、 . | ページ内にコメント欄を埋め込める | コメントからIssueを自動的に作ってくれる | . アプリです。GitHub Marketplaceで公開されてます。 . どうやるの? . まず、対象とするリポジトリにインストールします。 . その後上記のページの中で、各種パラメータを選ぶとコピペ用のスクリプトを自動で作ってくれます。 . それをページ内の埋め込みたい場所にコピペすればOK!! . 例えばこのページには(他のページも同じ)、下記のようなscriptタグが入っており、コメント欄を生成しています。 . &lt;script src=\"https://utteranc.es/client.js\" repo=\"mattynao/utterances_test\" issue-term=\"pathname\" label=\"Feedback\" theme=\"github-light\" crossorigin=\"anonymous\" async&gt; &lt;/script&gt; . 設定次第ですが、コメントの入ったファイルのパス名をIssueのタイトルとして自動で設定 してくれるのでどこのファイルを直せばいいかすぐに分かる!! 修正ファイルがすぐに特定できるので、修正作業もすぐにとりかかれるようになります。 . ↓↓ 各ページにコメント欄があるので試してみてください。↓↓ . ",
+    "url": "/utterances_test/doc/utterances/#%E3%81%AA%E3%81%AB%E3%81%93%E3%82%8C",
+    "relUrl": "/doc/utterances/#なにこれ"
+  }
+}
