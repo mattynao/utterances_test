@@ -459,7 +459,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
   <form id="custom_form" target="dummy_send_target">
       <div class="item">
         <label for="emailAddress">メールアドレス</label>
-        <input id="emailAddress" type="email" name="emailAddress" placeholder="example@mail.com" required></input>
+        <input id="emailAddress" type="text" name="emailAddress" placeholder="example@mail.com" required></input>
       </div>
 
       <div class="item">
@@ -615,7 +615,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 
           const form_iframe = document.createElement("iframe");
           //form_iframe.src = encodeURI(`https://docs.google.com/forms/u/0/d/e/1FAIpQLSd8jktXNPJ8HiHzZRWLIsl5uICauyyRnZu61SwT7PhMqyk1XQ/formResponse?emailAddress=${get_email_value("emailAddress")}&entry.1664715574=${get_textarea_value("entry.1664715574")}&entry.593226274=${location.pathname}.&submit=Submit`);
-          form_iframe.src = encodeURI(`https://docs.google.com/forms/u/0/d/e/1FAIpQLSd8jktXNPJ8HiHzZRWLIsl5uICauyyRnZu61SwT7PhMqyk1XQ/formResponse?emailAddress=${get_email_value("emailAddress")}&entry.1664715574=${get_textbox_value("entry.1664715574")}&entry.1035960842=${get_textarea_value("entry.1035960842")}&entry.593226274=${location.pathname}&submit=Submit`);
+          form_iframe.src = encodeURI(`https://docs.google.com/forms/u/0/d/e/1FAIpQLSd8jktXNPJ8HiHzZRWLIsl5uICauyyRnZu61SwT7PhMqyk1XQ/formResponse?emailAddress=${get_textbox_value("emailAddress")}&entry.1664715574=${get_textbox_value("entry.1664715574")}&entry.1035960842=${get_textarea_value("entry.1035960842")}&entry.593226274=${location.pathname}&submit=Submit`);
 
           form_iframe.style.display = "none";
           document.getElementById("custom_form").appendChild(form_iframe);
@@ -634,7 +634,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-08-27 19:25:50 +0900
+Last updated 2021-08-27 19:32:10 +0900
 </div>
 </div>
 </body>
