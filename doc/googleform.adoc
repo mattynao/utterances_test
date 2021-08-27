@@ -7,21 +7,16 @@
   <form id="custom_form" target="dummy_send_target">
       <div class="item">
         <label for="emailAddress">メールアドレス</label>
-        <input id="emailAddress" type="email" name="emailAddress" placeholder="example@mail.com" required></input>
+        <input id="emailAddress" type="text" name="emailAddress" placeholder="example@mail.com" required></input>
       </div>
-
-      <div class="item">
-        <label for="title">質問</label>
-        <input id="title" type="text" name="entry.1664715574" placeholder="質問の概要" required></input>
-      </div>
-
-      <!--
 
       <div class="item">
         <label for="question">質問内容</label>
-        <textarea id="question" name="entry.1035960842" cols="30" rows="10" placeholder="質問の詳細をお書きください"></textarea>
+        <input id="question" type="text" name="entry.1664715574" placeholder="コメント" required></input>
+        <!--
+        <textarea id="question" name="entry.1664715574" cols="30" rows="10" placeholder="コメント" required></textarea>
+        -->
       </div>
-      -->
 
       <div class="item">
         <input id="file_name" type="hidden" name="entry.593226274"></input>
@@ -136,22 +131,6 @@
               return ""
           }
       }
-      function get_email_value(name) {
-          const element = document.querySelector(`input[type=email][name="${name}"]`);
-          if(element.value) {
-              return element.value;
-          } else {
-              return ""
-          }
-      }
-      function get_textarea_value(name) {
-          const element = document.querySelector(`textarea[name="${name}"]`);
-          if(element.value) {
-              return element.value;
-          } else {
-              return ""
-          }
-      }
 
       function ask_before_changing_page(event) {
           event.preventDefault();
@@ -165,10 +144,7 @@
           document.getElementById("custom_form").appendChild(dummy_send_target);
 
           const form_iframe = document.createElement("iframe");
-
-          //form_iframe.src = encodeURI(`https://docs.google.com/forms/u/0/d/e/1FAIpQLSd8jktXNPJ8HiHzZRWLIsl5uICauyyRnZu61SwT7PhMqyk1XQ/formResponse?emailAddress=${get_email_value("emailAddress")}&entry.1664715574=${get_textbox_value("entry.1664715574")}&entry.1035960842=${get_textarea_value("entry.1035960842")}&entry.593226274=${location.pathname}&submit=Submit`);
           form_iframe.src = encodeURI(`https://docs.google.com/forms/u/0/d/e/1FAIpQLSd8jktXNPJ8HiHzZRWLIsl5uICauyyRnZu61SwT7PhMqyk1XQ/formResponse?emailAddress=${get_textbox_value("emailAddress")}&entry.1664715574=${get_textbox_value("entry.1664715574")}&entry.593226274=${location.pathname}.&submit=Submit`);
-
           form_iframe.style.display = "none";
           document.getElementById("custom_form").appendChild(form_iframe);
 
