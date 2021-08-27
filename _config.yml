@@ -19,8 +19,8 @@ include:
 defaults:
   -
     scope:
-      path: ""
+      path: "doc"
       type: "pages"
     values:
-      layout: "default"
+      layout: "page"
       title: /:name
