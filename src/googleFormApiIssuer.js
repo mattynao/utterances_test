@@ -5,13 +5,15 @@ function onFormSubmit(e) {
   qa_list = keys.map( key => "### " + key + "\n" + e.namedValues[key] + "\n") ;
 
   const mail = e.namedValues["メールアドレス"][0] ;
-  const question_title = e.namedValues["質問タイトル"][0] ;
-  const question_detail = e.namedValues["質問詳細"][0] ;
+  const question = e.namedValues["質問"][0] ;
   const path = e.namedValues["対象ファイル"][0]
 
   // delete submitted datas
   form = FormApp.openById("1WBrEPHMKfbBCTElhcvqn-tAUiYaS6_CmuDZPc1NIWck");
   form.deleteAllResponses();
+  sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  row_cnt = sheet.getLastRow() - 1 ;
+  sheet.deleteRows(2, row_cnt) ;
 
   // github authorization
   // secrets stored in GAS properties
@@ -20,7 +22,7 @@ function onFormSubmit(e) {
   const adminMail = PropertiesService.getScriptProperties().getProperty("adminMail");
 
   // construct body for Issue
-  const body = `### 対象ファイル\n${path}\n` + `## 質問内容\n${question_detail}`
+  const body = `### 対象ファイル\n${path}\n` + `## 質問内容\n${question}`
 
   options = {
     "method": "post",
@@ -30,7 +32,7 @@ function onFormSubmit(e) {
       "Accept": "application/vnd.github.v3+json"
     },
     "payload" : JSON.stringify({
-      "title": question_title,
+      "title": path,
       "body": body
     })
   }
