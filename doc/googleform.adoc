@@ -7,7 +7,7 @@
   <form id="custom_form" target="dummy_send_target">
       <div class="item">
         <label for="emailAddress">メールアドレス</label>
-        <input id="emailAddress" type="text" name="emailAddress" placeholder="example@mail.com" required></input>
+        <input id="emailAddress" type="email" name="emailAddress" placeholder="example@mail.com" required></input>
       </div>
 
       <div class="item">
